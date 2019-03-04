@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "extends": "standard",
+  "plugins": ["jest"],
+  "rules": {
+    "no-new-func": 0,
+    "no-control-regex": 0,
+    "no-return-assign": 0,
+    "no-new": 0,
+    "no-mixed-operators": 0,
+    "prefer-const": [2]
+  },
+  "env": {
+    "jest": true
+  }
+}
