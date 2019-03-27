@@ -2,7 +2,7 @@
   "name": "ma",
   "version": "1.0.0",
   "description": "muaen application koa learning",
-  "main": "index.js",
+  "main": "./core/application.js",
   "scripts": {
     "test": "jest"
   },
