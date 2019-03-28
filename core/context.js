@@ -1,9 +1,9 @@
 const util = require('util')
-const createError = require('../lib/http-errors/http-errors')
-const httpAssert = require('../lib/http-assert/http-assert')
-const delegates = require('../lib/delegates/delegates')
+const createError = require('../lib/http-errors')
+const httpAssert = require('../lib/http-assert')
+const delegates = require('../lib/delegates')
 const statuses = require('../lib/statuses')
-const Cookies = require('../lib/cookies/cookies')
+const Cookies = require('../lib/cookies')
 
 const COOKIES = Symbol('context#cookies')
 
@@ -142,3 +142,5 @@ delegates(proto, 'request')
   .getter('fresh')
   .getter('ips')
   .getter('ip')
+
+module.exports = proto
